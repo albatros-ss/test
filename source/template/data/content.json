@@ -1,0 +1,84 @@
+{
+  "menu": {
+  "Dashboard": "dashboard-icon",
+  "Social Feed": "social-feed-icon",
+  "Invite Friends": "invite-friends-icon",
+  "Settings": "settings-icon",
+  "Log Out": "log-out-icon"
+  },
+  "footer": ["About", "Terms", "Privacy", "Help", "Report"],
+  "items": {
+    "Facebook": {
+      "number": "1,701",
+      "change number": "+4",
+      "icon name": "Facebook-color",
+      "name": "@abhisek.daas",
+      "photo": "./assets/img/ava/ava1.jpg",
+      "color": "linear-gradient(to bottom, #39579A, #2C4479)",
+      "text": "FOLLOWERS"
+    },
+    "Twitter": {
+      "number": "1,567",
+      "change number": "-3",
+      "icon name": "Twitter-color",
+      "name": "@wholetthedasout",
+      "photo": "./assets/img/ava/ava2.jpg",
+      "color": "linear-gradient(to bottom, #059FF5, #059FC3)",
+      "text": "FOLLOWERS"
+    },
+    "Instagram": {
+      "number": "1,139",
+      "change number": "+11",
+      "icon name": "Instagram-color",
+      "name": "@wholetthedasout",
+      "photo": "./assets/img/ava/ava3.jpg",
+      "color": "url(./assets/img/bg.jpg) center",
+      "text": "FOLLOWERS"
+    },
+    "LinkedIn": {
+      "number": "2,019",
+      "change number": "+39",
+      "icon name": "Instagram-color",
+      "name": "@abhisekd3",
+      "photo": "./assets/img/ava/ava1.jpg",
+      "color": "linear-gradient(to bottom, #007EBB, #007E9D)",
+      "text": "FOLLOWERS"
+    },
+    "YouTube": {
+      "number": "3,190",
+      "change number": "+22",
+      "icon name": "Youtube-color",
+      "name": "@TheAbhisekD",
+      "photo": "./assets/img/ava/ava4.jpg",
+      "color": "linear-gradient(to bottom, #CE1312, #B01312)",
+      "text": "SUBSCRIBERS"
+    },
+    "Snapchat": {
+      "number": "8,754",
+      "change number": "",
+      "icon name": "Snapchat",
+      "name": "@abhisekd",
+      "photo": "./assets/img/ava/ava3.jpg",
+      "color": "linear-gradient(to bottom, #FFFE00, #F3F200)",
+      "text": "SNAP SCORE"
+    },
+    "Google+": {
+      "number": "1,033",
+      "change number": "./assets/img/ava/ava3.jpg",
+      "icon name": "GooglePlus-color",
+      "name": "@+AbhisekDas",
+      "photo": "./assets/img/ava/ava3.jpg",
+      "color": "linear-gradient(to bottom, #F93F2D, #C73F2D)",
+      "text": "FOLLOWERS"
+    },
+    "Vine": {
+      "number": "1,045",
+      "change number": "",
+      "icon name": "Vine-color",
+      "name": "@1316139228245221376",
+      "photo": "./assets/img/ava/ava5.jpg",
+      "color": "linear-gradient(to bottom, #00B687, #008E87)",
+      "text": "LOOPS"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+extends ../layouts/_template
+
+block head
+    -var title = ''
+
+block main
+    .modal#modal
+        .modal-box
+            .modal-box__head
+                .modal-box__title Add Social Profile
+                .modal-box__btn#modal__btn X
+            .modal-box__text Add new social profile for tracking
+            form(class="form" id="form" method="POST" action="/")
+                .form__tittle URL
+                input(type='text' name= 'url' placeholder= 'https://twitter.com/username' required).form__input
+                input(type='submit' value='Lookup').form__btn            
+    header.header
+        .logo
+            +iconsvg('sociotrack-logo').logo__svg
+        .top-menu
+            .top-menu__box
+                .top-menu__notification
+                    .top-menu__counter
+                        span 2
+                    +iconsvg('notification-icon')
+                +iconsvg('search-icon')
+    .maincontainer
+        sidebar.sidebar
+            .profile
+                img(src="./assets/img/Avatar.png" alt="").profile__photo
+                .profile__name-box
+                    .profile__name Abhisek Das
+                        +iconsvg('Chevron')
+                    .profile__name-followers 10,968 Followers
+            nav.nav#nav
+                ul.nav__list
+                    each val, index in menu
+                        a(href='#' class='nav__item')
+                            +iconsvg(val).nav__svg
+                            .nav__link= index
+            .sidebar-footer
+                .sidebar-footer__list
+                    each val in footer
+                        a(href='#' class='sidebar-footer__item')= val
+        main.main
+            .dashboard
+                .dashboard-head
+                    .dashboard-head__top
+                        .dashboard-head__title @abhisek.das
+                        .dashboard-head__btn#dashboard__btn  + Add Social Profile
+                    .dashboard-head__sort#dashboard-head__sort
+                        .dashboard-head__date Last day
+                        .dashboard-head__date Week
+                        .dashboard-head__date Month
+                section.section
+                    .section-box
+                        ul.section-list
+                            each item, index in items
+                                .section-item__box
+                                    .section-item__element
+                                        div(class='section-item__top' style=`background:${item['color']};`)
+                                            +iconsvg(item["icon name"]).item
+                                            .section-item__number= item["number"]
+                                            .section-item__follower= item["text"]
+                                            if (item["change number"] > 0)
+                                                .section-item__change
+                                                    .section-item__change-number= item["change number"]
+                                                    +iconsvg('Page_1').arrow
+                                            if (item["change number"] < 0)
+                                                .section-item__change
+                                                    .section-item__change-number= item["change number"]
+                                                    +iconsvg('Page_1').arrow-minus
+                                        .section-item__bottom
+                                            img(src=item["photo"] alt="").section-item__ava
+                                            .section-item__social-box
+                                                .section-item__social= index
+                                                .section-item__name= item["name"]
